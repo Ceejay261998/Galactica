@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galactica</title>
+    <link rel="icon" href="sun.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<style>
+  /*modal background override*/
+  .modal-content {
+    background: rgb(7, 1, 1);
+    border-style: none
+  }
+
+</style>
+  </head>
+  <body style="background-color: rgb(37, 36, 36);">
+    <!-- Modal-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p style="color: white">Hello, fellow sojourner. May you enjoy your brief visit in here, a resting spot in a little corner of the universe.</p>
+        <img src="mainquasar.gif" class="img-fluid">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(7,1,1); border-style: none;">I Understand</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-bg-light sticky-top" style="background-color: black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Galactica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <!-- Navbar links-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="#Us">Us</a>
+            <a class="nav-link" href="#Planets">Planets</a>
+            <a class="nav-link" href="#Stars">Stars</a>
+            <a class="nav-link" href="#Galaxies">Galaxies</a>
+            <a class="nav-link" href="Universe.html">Universe</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Us -->
+    <section id="Us"style=" background-image:url(main.jpg); background-repeat: no-repeat; background-size: cover;">
+      <div class="container-lg">
+        <div class="row g-5 justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2" style="color: white">Earth</div>
+              <div class="display-5" style="color: rgb(192, 189, 189)">Our home planet. The only sphere that harbors life, as of the moment.</div>
+            </h1>
+            <p class="lead my-4 text-muted">For thousands of years of human history, not one conclusive event has enlightened mankind whether we are alone or not in the vast expense of the universe. Solitude in the eternal cosmos is one of life's greatest paradoxes.</p>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            
+            <!-- tooltip -->
+            <span class="tt" data-bs-placement="bottom" title="Earth">
+              <img src="Earthspeck.jpg" class="img-fluid" alt="Earth" style="border-radius: 30px">
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <!-- Planets -->
+    <section id="Planets">
+      <h1>
+        <a href="#PlanetsSidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="display-2 d-flex justify-content-center align-items-center mt-5" style="color: rgb(247, 243, 243);text-decoration:none" title="Learn More">Planets</a>
+      </h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 me-5 ms-5">
+        <div class="col">
+          <div class="card h-100" style="background-color: black">
+            <img src="mercury.png" class="card-img-top" alt="Mercury">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Mercury</h5>
+              <p class="card-text">The nearest planet to the Sun. Aptly named after the Roman messenger of the gods, it is the fastest planet to complete a revolution around the sun.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Terrestrial Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: black">
+            <img src="venus.png" class="card-img-top" alt="Venus" >
+            <div class="card-body" style="color: white">
+              <h5 class="card-title">Venus</h5>
+              <p class="card-text">The infernal one, the most burning amongst the planets. It shows its elegant brilliance during dusk and dawn, and was called after the Roman goddess of beauty.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Terrestrial Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: black">
+            <img src="earth.png" class="card-img-top" alt="Earth">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Earth</h5>
+              <p class="card-text">The Blue Planet. Its liquid water made life possible, even the emerging of sentient ones. For how long it will survive, humanity has a major role.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Terrestrial Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: black">
+            <img src="mars.png" class="card-img-top" alt="Mars">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Mars</h5>
+              <p class="card-text">The Roman god of war. The ancients must have thought of its red spark in the night sky as a beacon of bloodshed.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Terrestrial Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100"style="background-color: black">
+            <img src="jupiter.png" class="card-img-top" alt="Venus">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Jupiter</h5>
+              <p class="card-text">The king of planets, patterned after the king of Roman gods. This colossal giant harbors storms and violent winds.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Jovian Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100"style="background-color: black">
+            <img src="saturn.png" class="card-img-top" alt="Saturn">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Saturn</h5>
+              <p class="card-text">The planet whose prominence is due to its rings, Saturn is a gas giant, and the second largest of all the planets.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Jovian Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100"style="background-color: black">
+            <img src="uranus.png" class="card-img-top" alt="Mars">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Uranus</h5>
+              <p class="card-text">The coldest planet in the Solar System. It was referenced to the Greek god of the sky, the grandfather of Zeus.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Jovian Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: black">
+            <img src="neptune.png" class="card-img-top" alt="Neptune">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Neptune</h5>
+              <p class="card-text">Its bluish tint is mainly due to hydrogen and helium content. Made up of water, it was named after the Roman god of the seas.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Jovian Planet</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: black">
+            <img src="pluto.png" class="card-img-top" alt="Pluto">
+            <div class="card-body"style="color: white">
+              <h5 class="card-title">Pluto</h5>
+              <p class="card-text">Dethroned as a planet. Formerly the farthest planet from the sun, its name makes it suited for itself, after the Roman god of underworld.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Dwarf Planet</small>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!--Planets Sidebar-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="PlanetsSidebar" aria-labelledby="sidebar-label">
+  <div
+  class="bg-image"
+  style="
+    background-image: url('planetssidenav.jpg');
+    height: 100vh; background-size: cover; background-repeat: no-repeat;">
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title" id="sidebar-label" style="color: white;">Planets</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"style="background-color: rgb(165, 158, 158);">
+  </button>
+</div>
+  <div class="offcanvas-body">
+    <p style="color: white;">
+    For a celestial body to be qualified as a planet, it must <br>1. Orbit a star <br>2. Be big enough to have enough gravity for its shape to be spherical <br>3. Have gravity that clears away any other object similar of its size near its orbit
+  </p>
+  </div>
+  </div>
+</div>
+
+
+<!--Stars-->
+<section id="Stars">
+  <h1>
+    <a href="#StarsSidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="display-2 d-flex justify-content-center align-items-center mt-5" style="color: white;text-decoration:none" title="Learn More">Stars</a>
+  </h1>
+
+  <div class="row my-5 g-5 justify-content-around align-items-center">
+    <div class="col-6 col-lg-4">
+      <img id="LifecycleStar"src="nebula.jpg" class="img-fluid" alt="Lifecycle of a Star" style="border-radius: 10px">
+    </div>
+    <div class="col-lg-6">
+
+          <!-- accordion -->
+          <div class="accordion" id="chapters">
+            <div class="accordion-item"style="background-color: black; color:white">
+              <h2 class="accordion-header" id="heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1" style="background-color: rgb(51, 51, 51); color:white;" onclick=Birth();>
+                  Birth
+                </button>
+              </h2>
+              <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                <div class="accordion-body" style="background-color: rgb(51, 51, 51); color:rgb(175, 172, 172)">
+                  <p>Nebulas are giant gas clouds of dust and gas in space. When they clump together by action of gravity, they accumulate more mass and gravity gets stronger and stronger. Eventually, they collapse under their own gravity and the core heats up. A star is born.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2"style="background-color: rgb(51, 51, 51); color:white" onclick=Life()>
+                  Life
+                </button>
+              </h2>
+              <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                <div class="accordion-body" style="background-color: rgb(51, 51, 51); color:rgb(175, 172, 172)">
+                  <p>
+                    The duration of the life of a star depends mainly on its size. Massive stars shine more brightly and use up fuel quickly, while smaller ones lose their fuel more slowly. The little ones have been observing the cosmos for a longer time than the bigger ones.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-1"style="background-color: rgb(51, 51, 51); color:white"onclick=Collapse()>
+                  Collapse
+                </button>
+              </h2>
+              <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                <div class="accordion-body" style="background-color: rgb(51, 51, 51); color:rgb(175, 172, 172)">
+                  <p>In time, by becoming red giants or supergiants, stars burn their fuel. Depending on its size and mass, it will either go on a supernova- that is it will shed its outer layers in a bright explosion, or collapse into planetary nebulas. </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4"style="background-color: rgb(51, 51, 51); color:white" onclick=Afterlife()>
+                  Afterlife
+                </button>
+              </h2>
+              <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                <div class="accordion-body" style="background-color: rgb(51, 51, 51); color:rgb(175, 172, 172)">
+                  <p>Stars that undergo supernova can either become a neutron star, or a black hole. Those that became planetary nebulas condense, and become a white dwarf. After billions of years, all of these will cease to exist, resulting in the heat death of the universe.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+<!--Stars Sidebar-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="StarsSidebar" aria-labelledby="sidebar-label">
+  <div
+  class="bg-image"
+  style="
+    background-image: url('starssidenav.jpg');
+    height: 100vh; background-size: cover; background-repeat: no-repeat;">
+  <div class="offcanvas-header text">
+    <h5 class="offcanvas-title" id="sidebar-label" style="color: white">Stars</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"style="background-color: rgb(165, 158, 158);">
+    </button>
+  </div>
+    <div class="offcanvas-body">
+      <p style="color: white;">
+      Stars are the fundamental building blocks of the galaxies. They are the twinkles of light in the night-sky. For billions of years, these celestial bodies have been beacons of universal history, and will continue to be so in the next billions or more.
+    </p>
+    </div>
+  </div>
+  </div>
+
+<!--Galaxies-->
+    <section id="Galaxies">
+      <h1>
+        <a href="#GalaxiesSidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="display-2 d-flex justify-content-center align-items-center mt-5" style="color: white;text-decoration:none" title="Learn More">Galaxies</a>
+      </h1>
+      <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="false" style="background-color:rgb(34, 33, 33)">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="spiral.jpg" class="d-block mx-auto w-50 mw-100 h-auto" alt="Spiral galaxy">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Spiral Galaxies</h5>
+              <p>The most common type of galaxy. They have a rotating disc with <br> spiral arms that curve out from the center. </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="elliptical.jpg" class="d-block mx-auto w-50" alt="Elliptical galaxy">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Elliptical Galaxies</h5>
+              <p class="caption center-block">Elliptical galaxies are oval in shape, with stars distributed uniformly throughout. <br> They contain less stars than spiral ones.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="irregular.jpg" class="d-block mx-auto w-50" alt="Irregular galaxy">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Irregular Galaxies</h5>
+              <p>These are galaxies that don't have any standard shapes or forms.<br>  Some are formed by the collision of galaxies themselves.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </section>
+
+  <!--Galaxies Sidebar-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="GalaxiesSidebar" aria-labelledby="sidebar-label">
+  <div
+  class="bg-image"
+  style="
+    background-image: url('galaxysidenav.jpg');
+    height: 100vh; background-size: cover; background-repeat: no-repeat;">
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title" id="sidebar-label" style="color: white;">Galaxies</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: rgb(165, 158, 158);">
+  </button>
+</div>
+  <div class="offcanvas-body">
+    <p style="color: white;">
+    Galaxies are composed of millions and billions of stars. It is unfathomable to think that no other galaxy, with their sheer number of stars and planets, sustains life, other than our own,.
+  </p>
+  </div>
+  </div>
+</div>
+<script>
+  function Birth(){
+      document.getElementById('LifecycleStar')
+      .src="nebula.jpg";
+        }
+        function Life(){
+      document.getElementById('LifecycleStar')
+      .src="sun.png";
+        }
+        function Collapse(){
+      document.getElementById('LifecycleStar')
+      .src="supergiant.png";
+        }
+        function Afterlife(){
+      document.getElementById('LifecycleStar')
+      .src="blackhole.jpg";
+        }
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+  <!--Modal Loading-->
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#exampleModal').modal('show');
+    });
+  </script>
+    
+  </body>
+</html>
